@@ -1,0 +1,36 @@
+.footerLeft{
+    .footer-left-content{
+     
+        margin-top: 1.5rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
+        align-items: center;
+        border-left: 2px solid white;
+        height: 3rem;
+        p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+
+        h6{
+            font-size: 0.9rem;
+
+        }
+    }
+}
+
+.footerRight{
+  
+    height: 6rem;
+
+    h4{
+        font-size: 1.2rem;
+        margin-bottom: -0.1rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p{
+        font-size: 14px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}

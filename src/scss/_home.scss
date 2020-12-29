@@ -1,0 +1,12 @@
+.container{
+    padding: 0!important;
+    justify-content: center;
+    overflow-x: hidden;  
+
+
+    &::-webkit-scrollbar {
+        visibility: collapse;
+      }
+}
+
+

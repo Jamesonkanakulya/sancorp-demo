@@ -1,0 +1,83 @@
+.conatct-detail-container{
+    // background: red;
+
+    .contact-details{
+
+  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        span{
+            display: flex;
+    
+        justify-content: center;
+        align-items: center;
+            font-size: 4rem;
+            border: 3px solid black;
+            padding: 1rem;
+            border-radius: 55%;
+            margin: 1rem auto;
+    
+            &:hover{
+                background: #d16f12;
+                        transition: all 0.3s ease;
+                        border: 3px solid  #d16f12;
+            }
+        }
+    
+        p{
+            color: #606060;
+            font-family: 'Times New Roman', Times, serif;
+        
+        }
+    
+      
+    }
+    &::after{
+        content: '';
+        width: 40%;
+        // border: 5px solid black;
+    }
+}
+
+@mixin Mybutton {
+    padding: 0.5rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: #d16f12;
+    background: #fff;
+    margin: 0.5rem auto;
+    
+
+ 
+    
+}
+
+.formik-button{
+        @include Mybutton();
+
+        &:hover{
+            background: #d16f12;
+                    transition: all 0.3s ease;
+                    border: 1px solid  #d16f12;
+                    color: white;
+        }
+        &:focus{
+          
+            outline: none;
+        }
+
+    }
+.disable-button{
+        @include Mybutton();
+
+    }
+
+.location{
+    img{
+        height: 40rem;
+    }
+}

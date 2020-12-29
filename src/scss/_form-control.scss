@@ -1,0 +1,36 @@
+.form-input{
+    width: 100%;
+    margin: 1rem auto;
+  
+ 
+
+    input{
+        width: 100%;
+        padding: 0.5rem ;
+        text-transform: capitalize;
+    }
+    textarea{
+        width: 100%;
+        padding: 0.5rem ;
+        text-transform: capitalize;
+    }
+    
+
+}
+
+.contanct-form{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    width: 100%;
+
+    h6{
+        color:  #aaaaaa;
+        letter-spacing: 2px;
+        margin-top: -2rem;
+        margin-bottom: 1.5rem;
+    }
+}

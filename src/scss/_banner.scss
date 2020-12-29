@@ -1,0 +1,47 @@
+.banner{
+  color: white;
+
+    .left{
+        // background: yellow;
+        h2{
+            font-size: 1.7rem;
+            text-transform: capitalize;
+        }
+        h6{
+            color: #999da3;
+            
+
+        }
+
+
+    }
+    .right{
+        // background: red;
+        h5{
+            text-transform: uppercase;
+            font-size: 12px;
+
+            a{
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    color: #d16f12;
+                    transition: all 0.3s ease;
+                }
+                &::after{
+                    content: '>';
+                    margin-left: 5px;
+                    color: #999da3;
+                    font-weight: 900;
+                    
+                }
+            }
+            span{
+                
+                    color: #999da3;
+                
+            }
+        }
+    }
+}

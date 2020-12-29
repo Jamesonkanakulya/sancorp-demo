@@ -1,0 +1,64 @@
+.team {
+  padding-top: 2rem;
+  h1 {
+    text-align: center;
+    margin: 1.3rem auto;
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    letter-spacing: 2px;
+  }
+  .sancorp-team {
+    position: relative;
+    text-align: center;
+    // border: 2px solid red;
+
+    overflow: hidden;
+    img {
+      position: relative;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      width: 108%;
+      height: 16rem;
+    }
+    .hide {
+      display: none;
+    }
+
+    .team-social-media {
+      position: absolute;
+      background-color: #fd7d1431;
+      width: 100%;
+      object-fit: contain;
+      height: 16rem;
+      transition: all 0.3s ease-in-out;
+      top: 0;
+      //   left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        li {
+          display: inline-block;
+          margin: auto 0.5rem;
+        }
+      }
+    }
+
+    h3 {
+      margin: 10px auto;
+      a {
+        text-decoration: none;
+        color: #fd7e14;
+        font-size: 1.3rem;
+      }
+    }
+
+    h5 {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+}

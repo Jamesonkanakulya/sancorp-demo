@@ -1,0 +1,161 @@
+@import "./vriables";
+
+
+@mixin navePages {
+
+    li{
+        display: inline;
+        list-style: none;
+        margin: 0.5rem;
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+            font-weight:600 ;
+
+            &:hover{
+                color: #d16f12;
+                transition: all 0.3s ease;
+            }
+        }
+
+        .current{
+            color:  #d16f12;
+        }
+    }
+
+
+}
+
+@mixin myNavbar {
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        // padding: 2rem auto;
+     
+        
+    
+        img{
+            height: 2.5rem;
+            object-fit: contain;
+        }
+    
+        .navList{
+          
+           @include navePages();
+
+        }
+     
+
+        .menuIcon{
+            @media(min-width: 800px){
+                display: none;
+            }
+
+            .myIcon{
+
+            }
+
+        }
+    }
+    @media(max-width: 800px){
+       .navList{
+           display: none;
+        //    height: 7rem;
+       }
+
+   .showList{
+        display: flex;
+        flex-direction: column;
+        
+      
+    }
+    .hideList{
+        background: #d16f12;
+       display: none;
+              }
+    }
+
+
+    .showIcon{
+        position: absolute;
+        left: 60%;
+        display: block;
+        }
+        
+        .hideIcon{
+        display: none;
+        }
+    
+    
+}
+
+
+
+.topbar{
+
+    background: #211e1b;
+    .topbar-container{
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        align-items: center;
+        h6{
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+       
+
+        ul{
+            list-style: none;
+            margin-top: 0.4rem;
+
+            li{
+                display: inline;
+               
+                font-size: 0.8rem;
+                align-items: center;
+                margin: auto 0.3rem;
+              
+                a{
+                    margin-top: 1rem;
+                    text-decoration: none;
+                    color:#ffffff;
+                    justify-content: center;
+                    // padding: 0.2rem;
+                
+                
+                }
+            }
+        }
+
+    }
+   
+
+}
+
+.mainNav{
+
+ @include myNavbar();
+  
+    
+
+}
+
+
+.navFix{
+ background: white;
+
+    width: 100%;
+    top: 0;
+    @include myNavbar();
+    position: fixed;
+    z-index: 1;
+    // box-shadow: black;
+    // border-bottom: 1px solid black;
+    
+    
+
+}

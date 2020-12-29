@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import{BrowserRouter as Router} from 'react-router-dom'
+import SancorpProvider from './components/context';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  <SancorpProvider>
+  <Router>
+  <App />
+  </Router>
+  </SancorpProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
