@@ -3,6 +3,7 @@ import { SancorpContext } from "./context";
 import Footer from "./Footer";
 import ImageSlider from "./ImageSlider";
 import ServicesContent from "./ServicesContent";
+import home from '../images/home.jpg'
 
 function HomeContent() {
   const homepost = useContext(SancorpContext);
@@ -19,7 +20,18 @@ function HomeContent() {
     return (
     <>
       <div className="containter px-0 position-relative">
-        <ImageSlider homeSlides={homeSlides} arrow={arrow} />
+
+       <div className="d-none d-md-block">
+       <ImageSlider homeSlides={homeSlides} arrow={arrow} />
+       </div>
+       <div className="d-block d-md-none home-image p-2">
+        
+            <img src={home} alt="home image" />
+            <h2>introduction to oil and gas industry</h2>
+
+       </div>
+
+
         <div className="footer-home-component">
           {homeSlides ? (
             <Footer

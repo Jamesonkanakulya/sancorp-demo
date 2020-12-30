@@ -19,6 +19,22 @@
             padding: 1rem;
             border-radius: 55%;
             margin: 1rem auto;
+            text-transform: capitalize;
+
+           button{
+               padding: 0.5rem;
+               border: 1px solid black;
+               text-transform: uppercase;
+               font-weight: 500;
+               border-radius: 5px;
+               margin: 0.5rem auto;
+
+               &:hover{
+                background: #d16f12;
+                        transition: all 0.3s ease;
+                        border: 1px solid  #d16f12;
+            }
+           }
     
             &:hover{
                 background: #d16f12;

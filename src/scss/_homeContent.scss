@@ -28,3 +28,20 @@
     bottom: -0.5rem;
   }
 }
+.home-image{
+  position: relative;
+  img{
+    // height: 20rem;
+    width: 100%;
+    object-fit: contain;
+  }
+  h2{
+    position: absolute;
+    top: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+}
