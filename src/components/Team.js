@@ -9,7 +9,7 @@ function Team() {
   const homepost = useContext(SancorpContext);
   const homeSlides = homepost.context;
   const team = homepost.team;
-  console.log(team);
+ 
   return (
     <div style={{ background: "#F0F2F2" }} className="container-fluid py-4">
       <div className="container team">

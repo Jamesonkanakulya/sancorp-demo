@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 
 function Graph({ title, percentage, time }) {
   return (
-    <div className="my-2">
+    <div className="my-2 p-2">
       <Details>
         <h6>{title}</h6>
         <Para percentage={percentage} time={time}>
@@ -23,7 +23,7 @@ const breatheAnimation = (percentage) => keyframes`
  40% { width: 40%; opacity: 0.4; }
  60% { width: 60%;  opacity: 0.6;}
 
- 100% { width:${percentage}%;  opacity:1}
+ 100% { width:${percentage}%;  opacity:1; padding-right: 40%;}
  `;
 
 const Para = styled.p`

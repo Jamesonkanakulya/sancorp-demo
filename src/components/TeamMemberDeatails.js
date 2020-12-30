@@ -12,7 +12,7 @@ function TeamMemberDeatails(props) {
   const member = homepost.team.find((item) => slug === item.slug);
 
   // const [member, setMember] = useState(team.find((item) => slug === item.slug));
-  console.log(member);
+ 
 
   // useEffect(() => {
   //   const tempItem = team.find((item) => slug === item.slug);

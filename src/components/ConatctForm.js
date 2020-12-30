@@ -20,7 +20,7 @@ function ConatctForm() {
 
     const Submit = (values,onSubmitProps) => {
         console.log(values);
-        console.log(onSubmitProps);
+        // console.log(onSubmitProps);
         onSubmitProps.isSubmitting(false)
         onSubmitProps.resetForm()
     }
